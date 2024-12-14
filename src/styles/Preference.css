@@ -1,14 +1,55 @@
+/* Preference.css */
+
 .preference-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 90px;
+}
+
+.preference-title {
+  margin: 0;
+}
+
+/* Estilos específicos para cada título */
+.preference-title.js {
+  color: #C69AFF;
+}
+
+.preference-title.react {
+  color: #9F53FF;
+}
+
+.preference-title.coffee {
+  color: #6104D6;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 911px) {
+  .preference-container {
+    font-size: 60px;
+    padding: 1rem;
+    height: 80vh;
   }
-  
-  .preference-title {
-    margin: 0;
+
+  @media screen and (max-width: 660px) {
+    .preference-container {
+      font-size: 40px;
+      padding: 1rem;
+      height: 80vh;
+    }
   }
+
+  @media screen and (max-width: 480px) {
+    .preference-container {
+
+      font-size: 25px;
+      padding: 1rem;
+      height: 50vh;
+    }
+  }
+}
