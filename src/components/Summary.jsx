@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Summary.css'
-import '../styles/Responsive.css'
+import '../styles/responsive.css'
 import perfilImage from '../assets/perfil.jpg'; // Importe a imagem diretamente
 import TesteSvg from '../assets/teste.svg'; // Importe o SVG
 
