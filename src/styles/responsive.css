@@ -68,7 +68,7 @@
         align-items: center;
     }
     
-    .skills-container {
+    .my-skills .skills-container {
         margin-right: 0px;
       }
 
@@ -81,7 +81,7 @@
         height: 100vh;
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
-        font-size: 80px;
+        font-size: 40px;
       }
       
       .preference-title {
@@ -125,6 +125,17 @@
         align-items: center;
         text-align: center;
       }
+
+      .my-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .my-skills .skills-container {
+        margin-right: 0px;
+      }
+
 }
 
 @media screen and (max-width: 702px) {
@@ -151,6 +162,17 @@
         align-items: center;
         text-align: center;
       }
+
+      .my-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .my-skills .skills-container {
+        margin-right: 0px;
+      }
+
 }
 
 @media screen and (max-width: 660px) {
@@ -177,6 +199,17 @@
         align-items: center;
         text-align: center;
       }
+
+      .my-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .my-skills .skills-container {
+        margin-right: 0px;
+      }
+
 }
 
 @media screen and (max-width: 621px) {
@@ -203,6 +236,17 @@
         align-items: center;
         text-align: center;
       }
+
+      .my-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .my-skills .skills-container {
+        margin-right: 0px;
+      }
+
 }
 
 @media screen and (max-width: 520px) {
@@ -240,6 +284,17 @@
         border-radius: 12px; /* Opcional: bordas arredondadas */
       }
 
+      .my-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .my-skills .skills-container {
+        margin-right: 0px;
+      }
+    }
+
       @media screen and (max-width: 480px) {
         .preference-container {
             display: flex;
@@ -255,5 +310,17 @@
           .preference-title {
             margin: 0;
           }
+
+          .my-skills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
-}
+        
+        .my-skills .my-skills .skills-container {
+            margin-right: 0px;
+          }
+    
+        }
+
