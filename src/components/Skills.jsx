@@ -4,7 +4,7 @@ import "../styles/Skills.css";
 import "../styles/responsive.css";
 
 import Node from "../assets/skills/Node.png";
-import Javascript from "../assets/skills/Javascript.png";
+import Javascript from "../assets/skills/JavaScript.png";
 import Figma from "../assets/skills/Figma.png";
 import Reactimg from "../assets/skills/React.png";
 
