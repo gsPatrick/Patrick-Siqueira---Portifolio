@@ -1,0 +1,78 @@
+.skills-page {
+    display: flex;
+    flex-direction: column; /* Coloca as seções (header e skills) em coluna */
+    gap: 2rem; /* Espaço entre as seções */
+    padding: 2rem;
+  }
+  
+  /* Seção do título */
+  .skills-header {
+    text-align:  start;
+  }
+  
+  .section-title {
+    font-family: 'Raleway', sans-serif; /* Fonte Raleway */
+    font-size: 60px; /* Tamanho 60px */
+    font-weight: 400;
+    color: #fff;
+  }
+  
+
+  .my-skills {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens que não cabem se movam para a linha seguinte */
+    gap: 1rem;
+    padding: 2rem;
+    
+  }
+  
+  .skills-container-margin {
+    margin-right: 15px;
+}
+  
+  .skills-container {
+    border: 1px solid #303030;
+    border-radius: 8px;
+    padding: 1.5rem;
+    padding-left: 2.5rem;
+    color: #fff;
+    flex: 1;
+    max-width: 300px; /* Largura máxima fixa */
+    min-width: 200px; /* Largura mínima */
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column; /* Coloca os itens na vertical */
+    justify-content: flex-start; /* Garante que o conteúdo fique alinhado no topo */
+  }
+  
+  .skills-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+    text-align: left;
+  }
+
+  .skill-icon {
+    margin-right: 15px; /* Espaço de 5px entre a imagem e o texto */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-item i {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+    background-color: #303030; /* Placeholder para o ícone */
+    border-radius: 50%;
+  }
+  
+  .skill-item span {
+    font-size: 1rem;
+    color: #fff;
+  }
+  

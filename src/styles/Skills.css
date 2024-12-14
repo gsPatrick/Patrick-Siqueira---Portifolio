@@ -1,0 +1,35 @@
+/* Container principal do slideshow */
+.slideshow-container {
+    width: 100%;
+    height: auto; /* Altura do container ajustada para 350px */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Faixa das imagens que desliza */
+  .slideshow-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Cada imagem no slideshow */
+  .slide {
+    flex: 0 0 310px; /* Cada imagem com 310px de largura (250px + 30px de padding em cada lado) */
+    margin-right: 10px; /* Espaço entre as imagens */
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: auto; /* Largura da imagem ajustada para 250px */
+    height: auto; /* Altura da imagem ajustada para 250px */
+    padding: 0 30px; /* Adicionado um padding de 30px nas laterais */
+    object-fit: contain; /* Manter a proporção da imagem */
+    border-radius: 12px; /* Opcional: bordas arredondadas */
+  }
+
+  .slide.reduced-width {
+    flex: 0 0 124px; /* Redução da largura da primeira imagem para 40% */
+  }

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap'); /* Importa a fonte */
+
+
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: 'Raleway', sans-serif; /* Define a fonte Raleway */
+  font-size: 20px; /* Define o tamanho do texto */
+  font-weight: 500; /* Define o peso da fonte como Medium */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 55px;
+  background-color: #131314;
+}
+
+.navigation-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 3rem;
+}
+
+.nav-link-name {
+  color: #e1e1e2;
+}
+
+.nav-link {
+  font-size: 1.125rem; /* Este pode ser ajustado ou removido se não for necessário */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link-purple {
+  color: #b292ff;
+}
+
+.nav-link:hover {
+  color: #bab0ff;/* Azul */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.icon-link {
+  color: #6b7280;
+  transition: color 0.3s;
+}
+
+.icon-link.linkedin:hover {
+  color: #0a66c2; /* Azul do LinkedIn */
+}
+
+.icon-link.github:hover {
+  color: #e1e1e2; /* Preto do GitHub */
+}
+
+.icon-link.instagram:hover {
+  color: #e1306c; /* Rosa do Instagram */
+}
+
+.icon-link.mail:hover {
+  color: #d32f2f; /* Vermelho do Email */
+}
