@@ -10,26 +10,25 @@ import Reactimg from "../assets/skills/React.png";
 
 const Skills = () => {
   const skills = [Node, Javascript, Figma, Reactimg]; // Lista de imagens
-  const maxAdvances = 1; // Quantidade de avanços permitidos antes de resetar (1 avanço = passar 1 vez)
 
   const [currentIndex, setCurrentIndex] = useState(0); // Índice atual da imagem
   const [advances, setAdvances] = useState(0); // Contador de avanços
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (advances < maxAdvances) {
-        // Avança apenas 1 vez
+      if (advances < skills.length - 1) {
+        // Avança até a última imagem (não reseta até atingir a última)
         setCurrentIndex((prevIndex) => (prevIndex + 1) % skills.length);
         setAdvances((prevAdvances) => prevAdvances + 1); // Incrementa o contador de avanços
       } else {
-        // Reseta para o começo após o número definido de avanços
+        // Reseta para o começo após atingir a última imagem
         setCurrentIndex(0);
         setAdvances(0); // Reseta o contador de avanços
       }
     }, 4000); // Tempo de transição (4 segundos)
 
     return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
-  }, [advances, skills.length, maxAdvances]); // Reage às mudanças de `advances`
+  }, [advances, skills.length]); // Reage às mudanças de `advances`
 
   return (
     <div className="slideshow-container">
