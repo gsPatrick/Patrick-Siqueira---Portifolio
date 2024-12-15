@@ -1,23 +1,28 @@
 import React from 'react';
 import { Linkedin, Github, Instagram, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css'
 
 const Header = () => {
   return (
-    <header className="header-container">
+    <headeCCr className="header-container">
       {/* Seção de navegação centralizada */}
       <div className="header-content">
         {/* Links de navegação */}
         <nav className="navigation-links">
-          <a href="#" className="nav-link nav-link-name">
-            Patrick
-          </a>
-          <a href="#" className="nav-link nav-link-purple">
+        <Link to="/" className="nav-link nav-link-name">
+          Patrick
+        </Link>
+          <Link to="/projects" className="nav-link nav-link-purple">
             Projetos
-          </a>
+          </Link>
           <a href="#" className="nav-link nav-link-purple">
             Contato
           </a>
+          <a href="#" className="nav-link nav-link-purple">
+            Sobre mim
+          </a>
+
         </nav>
 
         {/* Ícones de contato */}
@@ -36,7 +41,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-    </header>
+    </headeCCr>
   );
 };
 

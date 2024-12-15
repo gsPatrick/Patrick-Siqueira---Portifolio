@@ -42,16 +42,30 @@ const Skills = () => {
     // Avança slides a cada 4 segundos
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => {
-        if (prevIndex === skills.length - 1) {
-          return 0; // Reseta para o início após o último slide
+        // Check screen width to determine reset point
+        if (window.innerWidth > 1467) {
+          // For screens larger than 1467px, reset at skills.length - 3
+          if (prevIndex === skills.length - 3) {
+            return 0; // Reseta para o início após o penúltimo slide
+          }
+        } else if (window.innerWidth > 980) {
+          // For screens between 980px and 1467px, reset at skills.length - 2
+          if (prevIndex === skills.length - 2) {
+            return 0; // Reseta para o início após o último slide
+          }
+        } else {
+          // For screens 980px or smaller, reset at skills.length - 1
+          if (prevIndex === skills.length - 1) {
+            return 0; // Reseta para o início após o último slide
+          }
         }
         return prevIndex + 1; // Avança para o próximo
       });
-
+  
       // Recalcula as larguras ao trocar o slide (para dispositivos móveis)
       calculateWidths();
     }, 4000);
-
+  
     return () => clearInterval(interval);
   }, [skills.length]);
 

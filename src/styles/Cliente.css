@@ -1,0 +1,106 @@
+.slideshow-clientes-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slideshow-clientes-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+/* Container principal */
+.clientes-container {
+    display: flex;
+    align-items: stretch; /* Faz os itens preencherem o container na direção vertical */
+    padding: 1rem;
+    flex-wrap: wrap; /* Para os cards quebrarem a linha quando não houver espaço suficiente */
+  }
+  
+  /* Card individual */
+  .cliente-card {
+    color: #fff; /* Texto branco */
+    padding: 3rem;
+    padding-inline: 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 35rem;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    border: 1px solid #303030;
+    flex: 1 1 calc(33.33% - 1.5rem); /* Ajusta o tamanho de cada card para ocupar 1/3 do espaço */
+    min-height: 300px; /* Garante que todos os cards tenham uma altura mínima */
+    box-sizing: border-box; /* Inclui o padding e borda no tamanho do elemento */
+    margin-right: 1.5rem;
+  }
+  
+  /* Cabeçalho do card (imagem e informações) */
+  .cliente-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .cliente-imagem {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px; /* Imagem redonda */
+  }
+  
+  .cliente-nome {
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  .cliente-profissao {
+    color: #a3a3a3; /* Cinza claro */
+    font-size: 0.875rem;
+  }
+  
+  /* Texto da mensagem */
+  .cliente-texto {
+    font-style: italic;
+    color: #d1d5db; /* Cinza claro */
+    flex-grow: 1; /* Faz o texto ocupar o máximo de espaço disponível, deixando os cards com a mesma altura */
+  }
+  
+
+
+/* Estilos para telas menores (até 900px) */
+@media (max-width: 900px) {
+    .slideshow-clientes-track {
+      justify-content: center;
+    }
+    
+    .cliente-card {
+      flex: 0 0 100%;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  
+    .mobile-slide {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Para telas menores que 420px */
+  @media (max-width: 420px) {
+    .slideshow-clientes-container {
+      justify-content: center;
+      overflow: hidden;
+    }
+  
+    .slideshow-clientes-track {
+      width: 100%;
+    }
+  
+    .cliente-card {
+      flex: 0 0 100%;
+      margin: 0;
+    }
+  }
