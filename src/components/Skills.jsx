@@ -37,9 +37,11 @@ const Skills = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => {
-        // Calcula o próximo índice circularmente
-        const nextIndex = (prevIndex + 1) % skills.length;
-        return nextIndex;
+        // Reseta o índice ao chegar na última imagem
+        if (prevIndex === skills.length - 1) {
+          return 0; // Volta para a primeira imagem
+        }
+        return prevIndex + 1; // Avança para o próximo índice
       });
     }, 4000); // Tempo de transição (4 segundos)
 
