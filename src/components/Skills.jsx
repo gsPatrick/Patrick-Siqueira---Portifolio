@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import "../styles/Skills.css";
 import "../styles/responsive.css";
@@ -10,37 +10,63 @@ import Reactimg from "../assets/skills/React.png";
 
 const Skills = () => {
   const skills = [Node, Javascript, Figma, Reactimg]; // Lista de imagens
-
   const [currentIndex, setCurrentIndex] = useState(0); // Índice atual da imagem
-  const [advances, setAdvances] = useState(0); // Contador de avanços
+  const [slideWidths, setSlideWidths] = useState([]); // Armazena a largura de cada slide
+  const slideshowRef = useRef(null); // Referência para o contêiner do slideshow
+  const slideRefs = useRef([]); // Referência para cada slide
+
+  useEffect(() => {
+    // Calcula a largura de cada slide
+    const calculateWidths = () => {
+      if (slideRefs.current.length) {
+        const widths = slideRefs.current.map((slide) =>
+          slide ? slide.offsetWidth : 0
+        );
+        setSlideWidths(widths);
+      }
+    };
+
+    calculateWidths();
+    window.addEventListener("resize", calculateWidths); // Recalcula as larguras ao redimensionar a janela
+
+    return () => {
+      window.removeEventListener("resize", calculateWidths);
+    };
+  }, [skills.length]);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (advances < skills.length - 1) {
-        // Avança até a última imagem (não reseta até atingir a última)
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % skills.length);
-        setAdvances((prevAdvances) => prevAdvances + 1); // Incrementa o contador de avanços
-      } else {
-        // Reseta para o começo após atingir a última imagem
-        setCurrentIndex(0);
-        setAdvances(0); // Reseta o contador de avanços
-      }
+      setCurrentIndex((prevIndex) => {
+        // Calcula o próximo índice circularmente
+        const nextIndex = (prevIndex + 1) % skills.length;
+        return nextIndex;
+      });
     }, 4000); // Tempo de transição (4 segundos)
 
     return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
-  }, [advances, skills.length]); // Reage às mudanças de `advances`
+  }, [skills.length]);
+
+  // Calcula a posição de translação com base na largura dos slides
+  const calculateTranslateX = () => {
+    if (!slideWidths.length || currentIndex === 0) return 0;
+    return slideWidths.slice(0, currentIndex).reduce((sum, width) => sum + width, 0);
+  };
 
   return (
-    <div className="slideshow-container">
+    <div className="slideshow-container" ref={slideshowRef}>
       <div
         className="slideshow-track"
         style={{
-          transform: `translateX(-${currentIndex * (100 / skills.length)}%)`,
-          width: `${skills.length * 100}%`,
+          transform: `translateX(-${calculateTranslateX()}px)`, // Calcula a posição com base no tamanho dos slides
+          transition: "transform 0.5s ease-in-out",
         }}
       >
         {skills.map((skill, index) => (
-          <div className="slide" key={index}>
+          <div
+            className="slide"
+            key={index}
+            ref={(el) => (slideRefs.current[index] = el)} // Define a referência para cada slide
+          >
             <img src={skill} alt={`Skill ${index + 1}`} />
           </div>
         ))}

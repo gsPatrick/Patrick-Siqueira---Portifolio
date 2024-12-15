@@ -33,3 +33,29 @@
   .slide.reduced-width {
     flex: 0 0 124px; /* Redução da largura da primeira imagem para 40% */
   }
+
+  /* Estilos para telas menores (exemplo: telas com largura de até 768px) */
+@media (max-width: 768px) {
+  .slide img {
+    width: 80%; /* Ajusta a largura das imagens para 80% da largura do slide */
+    height: auto; /* Mantém a altura proporcional */
+    padding: 0 0px; /* Ajusta o padding para 15px nas laterais */
+  }
+
+  .slide {
+    margin-right: 0px; /* Espaço entre as imagens */
+  }
+}
+
+/* Estilos para telas ainda menores (exemplo: telas com largura de até 480px) */
+@media (max-width: 480px) {
+  .slide img {
+    width: 70%; /* Ajusta a largura das imagens para 70% da largura do slide */
+    height: auto; /* Mantém a altura proporcional */
+    padding: 0 0px; /* Ajusta o padding para 10px nas laterais */
+  }
+
+  .slide {
+    margin-right: -50px; /* Espaço entre as imagens */
+  }
+}

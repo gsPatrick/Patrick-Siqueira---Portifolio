@@ -212,13 +212,6 @@
         margin: 0; 
       }
 
-      .slide img {
-        width: 250px;
-        height: 250px; /* Altura da imagem ajustada para 250px */
-        padding: 0 30px; /* Adicionado um padding de 30px nas laterais */
-        object-fit: contain; /* Manter a proporção da imagem */
-        border-radius: 12px; /* Opcional: bordas arredondadas */
-      }
 
       .my-skills {
         display: flex;
