@@ -13,7 +13,7 @@ const Summary = () => {
     <div className="hero">
       <div className="hero-left">
         <h1>Olá, meu nome é Patrick</h1>
-        <p>Sou Desenvolvedor de Sistemas com experiência sólida em tecnologias modernas e ambientes desafiadores. Domino linguagens como Java, JavaScript, TypeScript e frameworks avançados, sempre focando em criar soluções inovadoras, escaláveis e alinhadas às reais necessidades do mercado. Minha missão é transformar ideias em sistemas eficientes e de alto impacto.</p>
+        <p>Sou Empresario e Desenvolvedor de Sistemas com experiência sólida em tecnologias modernas e ambientes desafiadores. Domino linguagens como Java, JavaScript, TypeScript e frameworks avançados, sempre focando em criar soluções inovadoras, escaláveis e alinhadas às reais necessidades do mercado. Minha missão é transformar ideias em sistemas eficientes e de alto impacto.</p>
         <Link to="/projects">
         <button>Ver Projetos!</button>
         </Link>

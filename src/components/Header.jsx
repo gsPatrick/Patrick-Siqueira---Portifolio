@@ -27,16 +27,16 @@ const Header = () => {
 
         {/* Ícones de contato */}
         <div className="social-icons">
-          <a href="https://www.linkedin.com/in/patrick" target="_blank" rel="noopener noreferrer" className="icon-link linkedin">
+          <a href="https://www.linkedin.com/in/patrick-siqueira-2833a4264/" target="_blank" rel="noopener noreferrer" className="icon-link linkedin">
             <Linkedin size={24} />
           </a>
-          <a href="https://github.com/patrick" target="_blank" rel="noopener noreferrer" className="icon-link github">
+          <a href="https://github.com/gsPatrick" target="_blank" rel="noopener noreferrer" className="icon-link github">
             <Github size={24} />
           </a>
-          <a href="https://www.instagram.com/patrick" target="_blank" rel="noopener noreferrer" className="icon-link instagram">
+          <a href="https://www.instagram.com/patricksiqueira.developer/" target="_blank" rel="noopener noreferrer" className="icon-link instagram">
             <Instagram size={24} />
           </a>
-          <a href="mailto:patrick@email.com" className="icon-link mail">
+          <a href="mailto:patricksiqueira.developer@gmail.com" className="icon-link mail">
             <Mail size={24} />
           </a>
         </div>
