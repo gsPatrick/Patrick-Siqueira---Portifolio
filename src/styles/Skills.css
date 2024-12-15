@@ -15,12 +15,11 @@
     transition: transform 0.5s ease-in-out;
   }
   
-  /* Cada imagem no slideshow */
-  .slide {
-    flex: 0 0 310px; /* Cada imagem com 310px de largura (250px + 30px de padding em cada lado) */
-    margin-right: 10px; /* Espaço entre as imagens */
-    box-sizing: border-box;
-  }
+ 
+.slide {
+  flex: 0 0 auto; /* Ajusta largura dinamicamente */
+  text-align: center;
+}
   
   .slide img {
     width: auto; /* Largura da imagem ajustada para 250px */
@@ -57,5 +56,31 @@
 
   .slide {
     margin-right: -50px; /* Espaço entre as imagens */
+  }
+}
+
+/* Para telas menores que 420px */
+@media (max-width: 420px) {
+  /* Ajusta o slideshow para exibir uma imagem por vez */
+  .slideshow-container {
+    justify-content: center; /* Centraliza o conteúdo */
+    overflow: hidden; /* Esconde o restante das imagens fora do viewport */
+  }
+
+  .slideshow-track {
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .slide {
+    flex: 0 0 100%; /* Cada slide ocupa 100% da largura da tela */
+    margin: 0; /* Remove o espaço entre as imagens */
+  }
+
+  .slide img {
+    width: 100%; /* Imagem ajusta para preencher 100% da largura do slide */
+    height: auto; /* Mantém proporção */
+    padding: 0; /* Remove qualquer padding lateral */
+    object-fit: contain; /* Mantém proporção sem cortar */
   }
 }

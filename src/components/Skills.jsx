@@ -9,44 +9,53 @@ import Figma from "../assets/skills/Figma.png";
 import Reactimg from "../assets/skills/React.png";
 
 const Skills = () => {
-  const skills = [Node, Javascript, Figma, Reactimg]; // Lista de imagens
+  const skills = [Node, Javascript, Figma, Reactimg,]; // Lista de imagens
   const [currentIndex, setCurrentIndex] = useState(0); // Índice atual da imagem
   const [slideWidths, setSlideWidths] = useState([]); // Armazena a largura de cada slide
   const slideshowRef = useRef(null); // Referência para o contêiner do slideshow
   const slideRefs = useRef([]); // Referência para cada slide
 
-  useEffect(() => {
-    // Calcula a largura de cada slide
-    const calculateWidths = () => {
-      if (slideRefs.current.length) {
-        const widths = slideRefs.current.map((slide) =>
-          slide ? slide.offsetWidth : 0
-        );
-        setSlideWidths(widths);
-      }
-    };
+  // Função para calcular a largura de cada slide
+  const calculateWidths = () => {
+    if (slideRefs.current.length) {
+      const widths = slideRefs.current.map((slide) =>
+        slide ? slide.offsetWidth : 0
+      );
+      setSlideWidths(widths);
+    }
+  };
 
-    calculateWidths();
-    window.addEventListener("resize", calculateWidths); // Recalcula as larguras ao redimensionar a janela
+  useEffect(() => {
+    // Calcula larguras após renderização completa
+    const timeout = setTimeout(() => calculateWidths(), 50);
+
+    // Escuta redimensionamento
+    window.addEventListener("resize", calculateWidths);
 
     return () => {
+      clearTimeout(timeout);
       window.removeEventListener("resize", calculateWidths);
     };
   }, [skills.length]);
 
   useEffect(() => {
+    // Avança slides a cada 4 segundos
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => {
-        // Calcula o próximo índice circularmente
-        const nextIndex = (prevIndex + 1) % skills.length;
-        return nextIndex;
+        if (prevIndex === skills.length - 1) {
+          return 0; // Reseta para o início após o último slide
+        }
+        return prevIndex + 1; // Avança para o próximo
       });
-    }, 4000); // Tempo de transição (4 segundos)
 
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+      // Recalcula as larguras ao trocar o slide (para dispositivos móveis)
+      calculateWidths();
+    }, 4000);
+
+    return () => clearInterval(interval);
   }, [skills.length]);
 
-  // Calcula a posição de translação com base na largura dos slides
+  // Calcula a posição de translação com base nas larguras dos slides
   const calculateTranslateX = () => {
     if (!slideWidths.length || currentIndex === 0) return 0;
     return slideWidths.slice(0, currentIndex).reduce((sum, width) => sum + width, 0);
