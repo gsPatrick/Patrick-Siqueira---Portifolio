@@ -48,11 +48,11 @@
             ))}
             </div>
             <div className="projeto-buttons">
-            <a href={codeLink} className="button view-code" target="_blank" rel="noreferrer">
+            {/* <a href={codeLink} className="button view-code" target="_blank" rel="noreferrer">
                 View Code
-            </a>
+            </a> */}
             <a href={demoLink} className="button live-demo" target="_blank" rel="noreferrer">
-                Live Demo
+                Ver página
             </a>
             </div>
         </div>
@@ -151,9 +151,9 @@
               <Link to="/projects" className="nav-link nav-link-purple">
                 Projetos
               </Link>
-              <a href="#" className="nav-link nav-link-purple">
+              {/* <a href="#" className="nav-link nav-link-purple">
                 Contato
-              </a>
+              </a> */}
               <a href="#" className="nav-link nav-link-purple">
                 Sobre mim
               </a>

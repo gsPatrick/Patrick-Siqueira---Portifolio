@@ -1,0 +1,115 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+.aboutme-cv-section {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #b3b3b3;
+}
+
+.aboutme-cv-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.aboutme-cv-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutme-cv-button:hover {
+  background-color: #f3f3f3;
+  transform: translateY(-2px);
+}
+
+
+
+.aboutme-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutme-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: #131313;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.aboutme-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  padding-inline: 2rem;
+}
+
+.aboutme-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.aboutme-contract,
+.aboutme-duration,
+.aboutme-location {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+.aboutme-logo {
+  width: 150px;
+  height: 150px; /* Certifique-se de que a altura e a largura sejam iguais */
+  margin-top: 1rem;
+  border: 1px solid #2f2f2f;
+  border-radius: 50%; /* Deixa o elemento redondo */
+  object-fit: cover; /* Garante que a imagem se ajuste bem ao círculo */
+}
+
+.aboutme-right {
+  flex: 2;
+}
+
+.aboutme-company-name {
+  color: #a78df0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.aboutme-description {
+  margin-top: 1rem;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* Estilo geral para textos (h3, h4, p) */
+body, h3, h4, p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 22px; /* Tamanho geral dos textos */
+}
+
+/* Estilo específico para h2 */
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 28px; /* Tamanho do h2 */
+}

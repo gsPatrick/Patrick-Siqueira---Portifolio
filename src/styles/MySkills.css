@@ -41,7 +41,7 @@
     min-width: 200px; /* Largura mínima */
     margin-right: 100px;
     display: flex;
-    flex-direction: column; /* Coloca os itens na vertical */
+    flex-direction: column; /* Coloca os itens  vertical */
     justify-content: flex-start; /* Garante que o conteúdo fique alinhado no topo */
   }
   

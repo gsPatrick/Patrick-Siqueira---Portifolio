@@ -31,9 +31,9 @@ const Summary = () => {
           <Link to="/projects" className="nav-link nav-link-purple">
             Projetos
           </Link>
-          <a href="#" className="nav-link nav-link-purple">
+          {/* <a href="#" className="nav-link nav-link-purple">
             Contato
-          </a>
+          </a> */}
           <a href="#" className="nav-link nav-link-purple">
             Sobre mim
           </a>

@@ -5,7 +5,9 @@ import Summary from './components/Summary';
 import Skills from './components/Skills';
 import Preference from './components/Preference';
 import MySkills from './components/MySkills';
-import ProjectPage from './pages/ProjectPage'; // Importe a nova página
+import ProjectPage from './pages/ProjectPage'; 
+import AboutMePage from './pages/AboutMePage'
+// Importe a nova página
 // import Cliente from './components/Cliente';
 import './styles/App.css';
 
@@ -24,17 +26,24 @@ function App() {
                   <Skills />
                   <Preference />
                 </div>
-                <div className="sections">
-                  <MySkills />
+                <div className="sections container">
+                <MySkills />
                 </div>
                 {/* <div className="container">
                 <Cliente />
                 </div> */}
               </div>
+              
             }
+            
           />
+          
           <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/AboutMe" element={<AboutMePage />} />
+
+          
         </Routes>
+        
       </div>
     </Router>
   );
