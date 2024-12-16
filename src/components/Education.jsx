@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Education.css";
-import SENAI from '../assets/Education/SENAI.png'; // Caminho da logo
+import SENAI from '../assets/Education/Senai.png'; // Caminho da logo
 
 
 // Dados dos cards sem 'id'
