@@ -98,7 +98,7 @@
                 { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" }
             ],
             codeLink: "https://github.com/gsPatrick/Robo-Ebinex",
-            demoLink: "#",
+            demoLink: "",
         },
 
         {
