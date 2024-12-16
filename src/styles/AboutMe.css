@@ -113,3 +113,41 @@ h2 {
   font-weight: 600; /* SemiBold */
   font-size: 28px; /* Tamanho do h2 */
 }
+
+
+/* Media query para telas pequenas */
+@media (max-width: 768px) {
+  .aboutme-container {
+    display: flex;
+    flex-direction: column; /* Muda para coluna em telas pequenas */
+  }
+
+  .aboutme-left {
+    max-width: 100%; /* Remove a largura máxima */
+    padding-inline: 0; /* Remove o padding lateral */
+  }
+
+  .aboutme-right {
+    margin-top: 1rem; /* Adiciona um espaçamento entre as seções */
+  }
+
+  .aboutme-logo {
+    width: 120px; /* Ajusta o tamanho da logo */
+    height: 120px;
+  }
+
+
+  body, h3, h4, p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 15px; /* Tamanho geral dos textos */
+    text-align: center;
+  }
+  
+  /* Estilo específico para h2 */
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 17px; /* Tamanho do h2 */
+  }
+}
