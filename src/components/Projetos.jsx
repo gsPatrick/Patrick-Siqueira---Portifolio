@@ -2,12 +2,12 @@
     import "../styles/Projetos.css";
     import { Link } from 'react-router-dom';
     
-    import LpAlexandre from "../assets/projetos/LpAlexandre.png";
-    import Ebinex from "../assets/projetos/Ebinex.png";
-    import EbookUnime from "../assets/projetos/EbookUnime.png";
+    import LpAlexandre from "../assets/projetos/LpPortfolio.png";
+    import Ebinex from "../assets/projetos/EbinexRobo.png";
+    import EbookUnime from "../assets/projetos/LpEbook.png";
     import NoteApp from "../assets/projetos/NoteApp.png";
-    import Starbucks from '../assets/projetos/Starbucks.png'
-    import BWRRastreio from '../assets/projetos/BWRRastreio.png'
+    import Starbucks from '../assets/projetos/PgStarbucks.png'
+    import BWRRastreio from '../assets/projetos/BWR.png'
 
     //ICones para quando precisar:
 

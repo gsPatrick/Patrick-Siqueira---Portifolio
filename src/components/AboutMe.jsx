@@ -61,8 +61,14 @@ const AboutMe = () => {
             <p className="aboutme-description">{item.description}</p>
           </div>
         </div>
+
+
+
       ))}
     </div>
+
+
+
   );
 };
 

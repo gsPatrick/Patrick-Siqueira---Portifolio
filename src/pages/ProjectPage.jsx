@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Projetos from '../components/Projetos'
 import Header from '../components/Header';
+import Footer from '../components/Footer'
 
 function ProjectPage() {
     return (
@@ -10,7 +11,10 @@ function ProjectPage() {
         <Header />
           <Projetos /> {/* Renderize o componente Projetos */}
         </div>
+        <Footer />
       </div>
+      
+      
     );
   }
   

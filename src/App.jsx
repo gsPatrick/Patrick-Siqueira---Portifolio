@@ -7,6 +7,8 @@ import Preference from './components/Preference';
 import MySkills from './components/MySkills';
 import ProjectPage from './pages/ProjectPage'; 
 import AboutMePage from './pages/AboutMePage'
+import Footer from './components/Footer'
+
 // Importe a nova página
 // import Cliente from './components/Cliente';
 import './styles/App.css';
@@ -28,6 +30,9 @@ function App() {
                 </div>
                 <div className="sections container">
                 <MySkills />
+                </div>
+                <div className="app">
+                <Footer />
                 </div>
                 {/* <div className="container">
                 <Cliente />

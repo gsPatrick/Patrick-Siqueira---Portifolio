@@ -1,0 +1,152 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body, h3, h4, p, a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 22px; /* Tamanho geral dos textos */
+  }
+  
+  /* Estilo específico para h2 */
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 28px; /* Tamanho do h2 */
+  }
+
+.education-logo {
+    width: 200px; /* Define o tamanho da logo */
+    height: auto;
+    margin-top: 10px; /* Espaço entre a data e a logo */
+  }
+  
+
+.aboutme-cv-section {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #b3b3b3;
+  }
+  
+  .aboutme-cv-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  .aboutme-cv-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .aboutme-cv-button:hover {
+    background-color: #f3f3f3;
+    transform: translateY(-2px);
+  }
+  
+
+.education-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #303030;
+    border-radius: 50px;
+    padding: 4rem 5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: auto;
+    height: auto;
+    margin: 1rem auto;
+  }
+  
+  /* Lado esquerdo do card */
+  .education-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .education-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .education-subtitle {
+    text-align: center;
+    color: #a78df0;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+  }
+  
+  .education-date {
+    text-align: center;
+    color: #888888;
+    font-size: 0.9rem;
+  }
+  
+  /* Lado direito do card */
+  .education-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .education-link {
+    text-decoration: none;
+    color: #5ce1e6;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .education-link:hover {
+    color: #ffffff;
+  }
+  
+
+  /* Media query para telas pequenas */
+@media (max-width: 768px) {
+    .education-card{
+      display: flex;
+      flex-direction: column; /* Muda para coluna em telas pequenas */
+    }
+  
+    .education-left {
+      max-width: 100%; /* Remove a largura máxima */
+      padding-inline: 0; /* Remove o padding lateral */
+    }
+  
+    .education-right {
+      margin-top: 1rem; /* Adiciona um espaçamento entre as seções */
+    }
+  
+    .education-logo {
+      width: 120px; /* Ajusta o tamanho da logo */
+      height: 120px;
+    }
+
+    body, h3, h4, p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400; /* Regular */
+        font-size: 15px; /* Tamanho geral dos textos */
+        text-align: center;
+      }
+      
+      /* Estilo específico para h2 */
+      h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600; /* SemiBold */
+        font-size: 17px; /* Tamanho do h2 */
+      }
+}
