@@ -10,19 +10,24 @@ const Header = () => {
       <div className="header-content">
         {/* Links de navegação */}
         <nav className="navigation-links">
-        <Link to="/" className="nav-link nav-link-name">
-          Patrick
-        </Link>
-          <Link to="/projects" className="nav-link nav-link-purple">
+          <Link
+            to="/"
+            className={`nav-link ${location.pathname === '/' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
+            Patrick
+          </Link>
+          <Link
+            to="/projects"
+            className={`nav-link ${location.pathname === '/projects' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
             Projetos
           </Link>
-          {/* <a href="#" className="nav-link nav-link-purple">
-            Contato
-          </a> */}
-          <Link to="/AboutMe" className="nav-link nav-link-purple">
+          <Link
+            to="/AboutMe"
+            className={`nav-link ${location.pathname === '/AboutMe' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
             Sobre mim
-            </Link>
-
+          </Link>
         </nav>
 
         {/* Ícones de contato */}
