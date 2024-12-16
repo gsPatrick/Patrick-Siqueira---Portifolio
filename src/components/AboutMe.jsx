@@ -6,7 +6,7 @@ import PatrickDeveloper from '../assets/Empresas/placeholder.png'
 // Definindo os dados dos cards como constantes
 const aboutMeData = [
   {
-    title: "Gestor de automação de Marketing Digital",
+    title: "Gestor de automação",
     contractType: "Nobres Empreendedores",
     logo: Nobres, // Logo da empresa
     companyName: "Nobres Empreendedores",
