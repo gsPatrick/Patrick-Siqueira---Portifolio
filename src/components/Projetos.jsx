@@ -145,19 +145,25 @@
           <header className="header-container header-mobile">
             <div className="header-content">
             <nav className="navigation-links">
-            <Link to="/" className="nav-link nav-link-name">
-              Patrick
-            </Link>
-              <Link to="/projects" className="nav-link nav-link-purple">
-                Projetos
-              </Link>
-              {/* <a href="#" className="nav-link nav-link-purple">
-                Contato
-              </a> */}
-              <a href="#" className="nav-link nav-link-purple">
-                Sobre mim
-              </a>
-            </nav>
+          <Link
+            to="/"
+            className={`nav-link ${location.pathname === '/' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
+            Patrick
+          </Link>
+          <Link
+            to="/projects"
+            className={`nav-link ${location.pathname === '/projects' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
+            Projetos
+          </Link>
+          <Link
+            to="/AboutMe"
+            className={`nav-link ${location.pathname === '/AboutMe' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
+            Sobre mim
+          </Link>
+        </nav>
             </div>
           </header>
     
