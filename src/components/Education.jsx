@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Education.css";
+import { Link } from 'react-router-dom';
 import SENAI from '../assets/Education/Senai.png'; // Caminho da logo
 
 
@@ -18,6 +19,36 @@ const educationData = [
 const Education = () => {
   return (
     <div>
+
+      <header className="header-container header-mobile">
+      {/* Seção de navegação centralizada */}
+      <div className="header-content">
+        {/* Links de navegação */}
+        <nav className="navigation-links">
+          <Link
+            to="/"
+            className={`nav-link ${location.pathname === '/' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
+            Patrick
+          </Link>
+          <Link
+            to="/projects"
+            className={`nav-link ${location.pathname === '/projects' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
+            Projetos
+          </Link>
+          <Link
+            to="/AboutMe"
+            className={`nav-link ${location.pathname === '/AboutMe' ? 'nav-link-purple' : 'nav-link-name'}`}
+          >
+            Sobre mim
+          </Link>
+        </nav>
+
+      </div>
+    </header>
+
+
       <div className="aboutme-cv-section">
         <p className="aboutme-cv-text">
           &lt; Veja o que estou cursando e <br />{" "}

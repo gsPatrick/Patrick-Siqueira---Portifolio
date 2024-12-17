@@ -3,6 +3,7 @@ import '../styles/AboutMe.css';
 import Nobres from '../assets/Empresas/Nobres.png'; // Caminho da logo
 import PatrickDeveloper from '../assets/Empresas/placeholder.png'
 
+
 // Definindo os dados dos cards como constantes
 const aboutMeData = [
   {
@@ -36,9 +37,13 @@ const aboutMeData = [
 
 const AboutMe = () => {
   return (
+    
     <div className="aboutme-wrapper">
+    
+    
       
       <div className="aboutme-cv-section">
+        
         <p className="aboutme-cv-text">
           &lt; Aqui você pode me conhecer mais profissionalmente <br /> <strong>veja todas as minhas experiencias</strong>. /&gt;
         </p>
