@@ -127,7 +127,7 @@
 
         {
             title: "PopUp WooCommerce",
-            description: "Uma simples página para anotações diárias",
+            description: "Uma pagina de oculos com Pop-Up para mudanças nos itens dos óculos",
             image: [PopUp],
             icons: [
               { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg", alt: "WordPress" },
