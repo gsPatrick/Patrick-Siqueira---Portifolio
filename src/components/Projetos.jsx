@@ -8,6 +8,8 @@
     import NoteApp from "../assets/projetos/NoteApp.png";
     import Starbucks from '../assets/projetos/PgStarbucks.png'
     import BWRRastreio from '../assets/projetos/BWR.png'
+    import PopUp from '../assets/projetos/\PopUp.png'
+    import PabloDias from '../assets/projetos/PabloDias.png'
 
     //ICones para quando precisar:
 
@@ -19,6 +21,15 @@
     // { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", alt: "Java" },
     // { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", alt: "Spring Boot" },
     // { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" }
+    // { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg", alt: "WordPress" }
+
+    // { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", alt: "PHP" }
+
+    // { src: "https://cdn-icons-png.flaticon.com/512/5968/5968706.png", alt: "Squarespace" }
+
+    // { src: "https://i.imgur.com/gn6H3yi.png", alt: "Elementor" }
+
+
 
 
     // Componente reutilizável para projetos
@@ -108,22 +119,40 @@
             icons: [
             { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5" },
             { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3" },
+            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
             ],
             codeLink: "https://github.com/gsPatrick/Site-Aproveitamento-Integral-Alimentos-Unime-Equipe-Aipim",
             demoLink: "https://equipe-aipim.vercel.app/",
         },
 
         {
-            title: "NoteApp",
+            title: "PopUp WooCommerce",
             description: "Uma simples página para anotações diárias",
-            image: [NoteApp],
+            image: [PopUp],
             icons: [
+              { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg", alt: "WordPress" },
+              { src: "https://i.imgur.com/gn6H3yi.png", alt: "Elementor" },
+              { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", alt: "PHP" },
             { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5" },
             { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3" },
+            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
             ],
             codeLink: "https://github.com/gsPatrick/Note-app",
-            demoLink: "https://note-app-chi-weld.vercel.app/",
+            demoLink: "https://otica.rodriguezbusiness.com.br/",
         },
+
+        {
+          title: "PopUp WooCommerce",
+          description: "Uma simples página para anotações diárias",
+          image: [PabloDias],
+          icons: [
+          { src: "https://cdn-icons-png.flaticon.com/512/5968/5968706.png", alt: "Squarespace" },
+          { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5" },
+          { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3" },
+          ],
+          codeLink: "https://github.com/gsPatrick/Note-app",
+          demoLink: "https://otica.rodriguezbusiness.com.br/",
+      },
 
         {
             title: "Pagina - Starbucks",

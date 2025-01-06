@@ -1,5 +1,6 @@
 .skills-page {
     display: flex;
+
     flex-direction: column; /* Coloca as seções (header e skills) em coluna */
     gap: 2rem; /* Espaço entre as seções */
     padding: 2rem;

@@ -7,6 +7,7 @@ import Preference from './components/Preference';
 import MySkills from './components/MySkills';
 import ProjectPage from './pages/ProjectPage'; 
 import AboutMePage from './pages/AboutMePage'
+import MySkillsPage from './pages/MySkillsPage'
 import Footer from './components/Footer'
 
 // Importe a nova página
@@ -45,6 +46,7 @@ function App() {
           
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/AboutMe" element={<AboutMePage />} />
+          <Route path="/MySkills" element={<MySkillsPage />} />
 
           
         </Routes>

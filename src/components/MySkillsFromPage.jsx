@@ -63,23 +63,23 @@ const skillsData = [
     ],
   },
 
-  // {
-  //   category: "Banco de Dadoas",
-  //   skills: [
-  //     { name: "MySQL", image: springBootImg },
-  //     { name: "PostgreSQL", image: NestImg },
-  //     { name: "MariaDB", image: NextImg },
-  //     { name: "MongoDB", image: NextImg },
-  //   ],
-  // },
+  {
+    category: "Banco de Dadoas",
+    skills: [
+      { name: "MySQL", image: springBootImg },
+      { name: "PostgreSQL", image: NestImg },
+      { name: "MariaDB", image: NextImg },
+      { name: "MongoDB", image: NextImg },
+    ],
+  },
 
-  // {
-  //   category: "ORM",
-  //   skills: [
-  //     { name: "Sequelize", image: PrimaImg },
-  //     { name: "Prisma", image: PrimaImg },
-  //   ],
-  // },
+  {
+    category: "ORM",
+    skills: [
+      { name: "Sequelize", image: PrimaImg },
+      { name: "Prisma", image: PrimaImg },
+    ],
+  },
 
 ];
 
