@@ -142,8 +142,8 @@
         },
 
         {
-          title: "PopUp WooCommerce",
-          description: "Uma simples página para anotações diárias",
+          title: "Pagina Moderna - SquareSpace",
+          description: "Uma página feita no SquareSPace",
           image: [PabloDias],
           icons: [
           { src: "https://cdn-icons-png.flaticon.com/512/5968/5968706.png", alt: "Squarespace" },
