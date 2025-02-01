@@ -48,6 +48,7 @@
   background-color: #131313;
   color: #fff;
   padding: 2rem;
+  margin-bottom: 35px;
   border-radius: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -112,6 +113,14 @@ h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600; /* SemiBold */
   font-size: 28px; /* Tamanho do h2 */
+}
+
+.aboutme-duration { /* Style for the duration text */
+  font-size: 0.9rem; /* Adjust font size to match "Nobres Empreendedores" */
+  color: #b3b3b3; /* Use the same color as "Nobres Empreendedores" */
+  text-align: center; /* Center the text below the title */
+  margin-top: 0.3rem; /* Add a little space between title and duration */
+  margin-bottom: 0.5rem; /* Add a little space between duration and contract type */
 }
 
 
