@@ -18,6 +18,15 @@ import springBootImg from "../assets/technologies/SpringBootIcon.png";
 import NestImg from '../assets/technologies/NestIcone.png';
 import NextImg from '../assets/technologies/NextIcone.png'
 import PrimaImg from '../assets/technologies/PrismaIcone.png'
+import doissxc from '../assets/technologies/2sxc.png'
+import Github from '../assets/technologies/Github.png'
+import Nginx from '../assets/technologies/Nginx.png'
+import Docker from '../assets/technologies/Docker.png'
+import CSharp from '../assets/technologies/CSharp.png'
+import Dnn from '../assets/technologies/Dnn.png'
+import DotNet from '../assets/technologies/DotNet.png'
+import AspNet from '../assets/technologies/AspNet.png'
+
 
 // Definindo as skills em constantes
 const skillsData = [
@@ -29,12 +38,14 @@ const skillsData = [
 //     ],
 //   },
   {
-    category: "Front-end e Design",
+    category: "Front-end, Design e WEB",
     skills: [
       { name: "React.js", image: reactImg },
       { name: "Next.js", image: NextImg },
+      { name: "2sxc", image: doissxc },
       { name: "Vite", image: viteImg },
       { name: "Figma", image: figmaImg },
+      { name: "ASP.NET", image: AspNet },
     ],
   },
   {
@@ -43,6 +54,7 @@ const skillsData = [
       { name: "JavaScript", image: javascriptImg },
       { name: "TypeScript", image: typescriptImg },
       { name: "Java", image: javaImg},
+      { name: "C#", image: CSharp},
     ],
   },
   {
@@ -52,6 +64,8 @@ const skillsData = [
       { name: "Nest.js", image: NestImg },
       { name: "Java", image: javaImg},
       { name: "Spring Boot", image: springBootImg },
+      { name: "C#", image: CSharp},
+      { name: ".NET Core", image: DotNet },
     ],
   },
   {
@@ -60,6 +74,18 @@ const skillsData = [
       { name: "Spring Boot", image: springBootImg },
       { name: "Nest.js", image: NestImg },
       { name: "Next.js", image: NextImg },
+      { name: ".NET Core", image: DotNet },
+      { name: "ASP.NET", image: AspNet },
+      
+    ],
+  },
+  {
+    category: "DevOPS",
+    skills: [
+      { name: "Docker", image: Docker },
+      { name: "Github", image: Github },
+      { name: "Nginx", image: Nginx },
+      
     ],
   },
 
@@ -73,13 +99,13 @@ const skillsData = [
   //   ],
   // },
 
-  // {
-  //   category: "ORM",
-  //   skills: [
-  //     { name: "Sequelize", image: PrimaImg },
-  //     { name: "Prisma", image: PrimaImg },
-  //   ],
-  // },
+  {
+    category: "CMS",
+    skills: [
+      { name: "DotNetLuke", image: Dnn },
+      { name: "2SXC", image: doissxc },
+    ],
+  },
 
 ];
 
